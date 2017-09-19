@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <head>
-	<title>My portfolio</title>
+    <title>My portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="">
 	<meta name="Vitalii Zhuk" content="">
     <link rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" 
           href="css/main.css">
-    <link rel="shortcut icon" 
-          href="favicon.png" >
+          <link rel="stylesheet" 
+          href="css/media-queries.css">
+          <link rel="shortcut icon" 
+          href="favicon.png" >  
 </head>
 <body>
    <header id="home">
       <nav id="nav-wrap">
+           <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+           <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
          <ul class="nav">
             <li id="home-link" 
                 class="nav-row"><a 
@@ -31,6 +36,7 @@
                 <a href="#contact">Contact</a>
             </li>
          </ul> 
+         
       </nav> 
       <div class="row banner">
          <div class="banner-text">
@@ -83,13 +89,32 @@
          </div>
       </div>
    </header> 
-   <div class="about">
-   </div>
-   <div class="rezume">
-   </div>
-   <div class="work">
-   </div>
-   <div class="contact">
-   </div>
+   <section id="about">
+          <div class="row">
+             <div class="img">
+                <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+             </div>
+             <div class="main-col">
+                <h2>About Me</h2>
+                <p> I am back end developer. I specialize in Java and also i am front end developer. In my work i use 
+                    Spring, Hibernate,MySQL, Bootstrap, HTML, CSS and others frameworks and technologies. In this portfolio 
+                    you can read about my skills and my progects. 
+                </p>
+             </div>
+                   <div class="contact-details">
+                      <h2>Contact Details</h2>
+                    <p class="address">
+                        <span>Vitalii Zhuk</span><br>
+                        <span>Ukraine, Kiev</span><br>
+                        <span class="address-block-label">phone:</span>
+                        <a class="address-block-link" target="_blank" href="tel:+380638521116">+380638521116</a><br>
+                        <span class="address-block-label">email:</span>
+                        <a class="address-block-link" target="_blank" href="mailto:golden_beetle@bigmir.net">golden_beetle@bigmir.net</a><br>
+                        <span class="address-block-label">GitHub:</span> 
+                        <a class="address-block-link" target="_blank" href="https://github.com/VitaliiZhuk" target="_blank">VitaliiZhuk</a>
+                    </p>
+                   </div>
+          </div>
+       </section>
 </body>
 </html>

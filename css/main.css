@@ -14,6 +14,9 @@
     vertical-align: middle;
     height: 100%;
 }
+#nav-wrap > a.mobile-btn {
+     display: none; 
+}
 .banner {
     display: inline-block;
     vertical-align: middle;
@@ -71,7 +74,6 @@
    list-style: none;
    height: 48px;
    display: inline-block;
-   
 }
 .nav-row a {
    display: inline-block;
@@ -92,6 +94,50 @@
   position: fixed;
   left: 0;
   top: 0;
+}
+
+/*About*/
+#about {
+    background: #2B2B2B;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+    
+ }
+#about a, #about a:visited  { color: #fff; }
+#about a:hover, #about a:focus { color: #11ABB0; }
+
+#about h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+   text-align: center;
+}
+#about p {
+   line-height: 40px;
+   color: #7A7A7A;
+}
+.img{
+    width: 30%;
+ 
+    float: left;
+    text-align: center;
+}
+#about .profile-pic {
+   position: relative;
+   width: 160px;
+   height: 160px;
+   border-radius: 100%;
+  
+}
+#about .contact-details { 
+    width: 100%;
+    text-align: center;
+}
+
+#about .main-col { 
+    padding-right: 5%; 
+    height: 300px;
 }
 
 
