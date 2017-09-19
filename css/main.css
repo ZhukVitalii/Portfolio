@@ -87,6 +87,7 @@
 #nav-wrap {
   font: 20px 'opensans-bold', sans-serif;
   width: 100%;
+  height: 70px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   margin: 0 auto;
@@ -94,7 +95,10 @@
   position: fixed;
   left: 0;
   top: 0;
+  display: block;
+  background-color: #333;
 }
+
 
 /*About*/
 #about {
@@ -119,7 +123,6 @@
 }
 .img{
     width: 30%;
- 
     float: left;
     text-align: center;
 }
@@ -139,5 +142,269 @@
     padding-right: 5%; 
     height: 300px;
 }
+
+
+
+/* ------------------------------------------------------------------ */
+/* d. Resume Section
+/* ------------------------------------------------------------------ */
+
+#resume {
+    background: #fff;
+    padding-top: 90px;
+    padding-bottom: 72px;
+    overflow: hidden;
+ }
+ 
+ #resume a, #resume a:visited  { color: #11ABB0; }
+ #resume a:hover, #resume a:focus { color: #313131; }
+ 
+ #resume h1 {
+    font: 18px/24px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+ }
+ #resume h1 span {
+    border-bottom: 3px solid #11ABB0;
+    padding-bottom: 6px;
+ }
+ #resume h3 {
+    font: 25px/30px 'opensans-bold', sans-serif;
+ }
+ 
+ #resume .header-col { padding-top: 9px; }
+ #resume .main-col { padding-right: 10%; }
+ 
+ .education, .work {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E8E8E8;
+ }
+ #resume .info {
+    font: 16px/24px 'librebaskerville-italic', serif;
+    color: #6E7881;
+    margin-bottom: 18px;
+    margin-top: 9px;
+ }
+ #resume .info span {
+    margin-right: 5px;
+    margin-left: 5px;
+ }
+ #resume .date {
+    font: 15px/24px 'opensans-regular', sans-serif;
+    margin-top: 6px;
+ }
+
+ .column, .columns {
+    position: relative;
+    padding: 0 20px;
+    min-height: 1px;
+    float: left;
+ }
+ .column.centered, .columns.centered  {
+    float: none;
+    margin: 0 auto;
+}
+.row.collapsed > .column,
+.row.collapsed > .columns,
+.column.collapsed, .columns.collapsed  { padding: 0; }
+[class*="column"] + [class*="column"]:last-child { float: right; }
+[class*="column"] + [class*="column"].end { float: right; }
+ 
+ /*----------------------------------------------*/
+ /*	Skill Bars
+ /*----------------------------------------------*/
+ 
+ .bars {
+     width: 95%;
+     float: left;
+     padding: 0;
+     text-align: left;
+ }
+ .bars .skills {
+       margin-top: 36px;
+    list-style: none;
+ }
+ .bars li {
+    position: relative;
+       margin-bottom: 60px;
+       background: #ccc;
+       height: 42px;
+       border-radius: 3px;
+ }
+ .bars li em {
+    font: 15px 'opensans-bold', sans-serif;
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    position: relative;
+    top: -36px;
+ }
+ .bar-expand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding-right: 24px;
+    background: #313131;
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 3px 0 0 3px;
+ }
+ 
+ .photoshop {
+       width: 60%;
+       -moz-animation: photoshop 4s ease;
+       -webkit-animation: photoshop 4s ease;
+ }
+ .illustrator {
+       width: 55%;
+       -moz-animation: illustrator 4s ease;
+       -webkit-animation: illustrator 4s ease;
+ }
+ .wordpress {
+       width: 50%;
+       -moz-animation: wordpress 4s ease;
+       -webkit-animation: wordpress 4s ease;
+ }
+ .css {
+       width: 90%;
+       -moz-animation: css 4s ease;
+       -webkit-animation: css 4s ease;
+ }
+ .html5 {
+       width: 80%;
+       -moz-animation: html5 4s ease;
+       -webkit-animation: html5 4s ease;
+ }
+ .jquery {
+       width: 50%;
+       -moz-animation: jquery 4s ease;
+       -webkit-animation: jquery 4s ease;
+ }
+ @-moz-keyframes photoshop {
+    0%   { width: 0px;  }
+    100% { width: 60%;  }
+  }
+  @-moz-keyframes illustrator {
+    0%   { width: 0px;  }
+    100% { width: 55%;  }
+  }
+  @-moz-keyframes wordpress {
+    0%   { width: 0px;  }
+    100% { width: 50%;  }
+  }
+  @-moz-keyframes css {
+    0%   { width: 0px;  }
+    100% { width: 90%;  }
+  }
+  @-moz-keyframes html5 {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+  }
+  @-moz-keyframes jquery {
+    0%   { width: 0px;  }
+    100% { width: 50%;  }
+  }
+  
+  @-webkit-keyframes photoshop {
+    0%   { width: 0px;  }
+    100% { width: 60%;  }
+  }
+  @-webkit-keyframes illustrator {
+    0%   { width: 0px;  }
+    100% { width: 55%;  }
+  }
+  @-webkit-keyframes wordpress {
+    0%   { width: 0px;  }
+    100% { width: 50%;  }
+  }
+  @-webkit-keyframes css {
+    0%   { width: 0px;  }
+    100% { width: 90%;  }
+  }
+  @-webkit-keyframes html5 {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+  }
+  @-webkit-keyframes jquery {
+    0%   { width: 0px;  }
+    100% { width: 50%;  }
+  }
+.one { 
+      width: 8.33333%; 
+}
+.two {width: 16.66667%; 
+}
+.three {
+     width: 25%; 
+}
+.four {
+     width: 33.33333%; 
+}
+.five {
+     width: 41.66667%; 
+}
+.six {
+     width: 50%; 
+}
+.seven {
+     width: 58.33333%; 
+}
+.eight { 
+    width: 66.66667%; 
+}
+.nine {
+     width: 75%; 
+}
+.ten {
+     width: 83.33333%; 
+}
+.eleven { 
+    width: 91.66667%; 
+}
+.twelve {
+     width: 100%; 
+}
+  
+  /* Offsets */
+  .row .offset-1    { margin-left: 8.33333%; }
+  .row .offset-2    { margin-left: 16.66667%; }
+  .row .offset-3    { margin-left: 25%; }
+  .row .offset-4    { margin-left: 33.33333%; }
+  .row .offset-5    { margin-left: 41.66667%; }
+  .row .offset-6    { margin-left: 50%; }
+  .row .offset-7    { margin-left: 58.33333%; }
+  .row .offset-8    { margin-left: 66.66667%; }
+  .row .offset-9    { margin-left: 75%; }
+  .row .offset-10   { margin-left: 83.33333%; }
+  .row .offset-11   { margin-left: 91.66667%; }
+  .row {
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+ }
+ /* fixed width for IE8 */
+ .ie .row { width: 1000px ; }
+ 
+ .narrow .row { max-width: 980px; }
+ 
+ .row .row { width: auto; max-width: none; margin: 0 -20px; }
+ 
+ /* row clearing */
+ .row:before,
+ .row:after {
+     content: " ";
+     display: table;
+ }
+ .row:after {
+     clear: both;
+ }
+
+
+ /* removed gutters */
+ 
 
 
