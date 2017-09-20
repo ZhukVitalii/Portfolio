@@ -8,10 +8,21 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" 
           href="css/main.css">
-          <link rel="stylesheet" 
+    <link rel="stylesheet" 
           href="css/media-queries.css">
-          <link rel="shortcut icon" 
+    <link rel="shortcut icon" 
           href="favicon.png" >  
+    <!--for slider-->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="js/snap.svg-min.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' 
+          rel='stylesheet' 
+          type='text/css'> 
+    <link rel="stylesheet" 
+          href="css/slider.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 </head>
 <body>
    <header id="home">
@@ -32,11 +43,7 @@
             <li class="nav-row">
                 <a href="#portfolio">Works</a>
             </li>
-            <li class="nav-row">
-                <a href="#contact">Contact</a>
-            </li>
-         </ul> 
-         
+         </ul>    
       </nav> 
       <div class="row banner">
          <div class="banner-text">
@@ -44,23 +51,19 @@
                 <h1>Hello!</h1>
                 <h1>I'm Vitalii Zhuk.</h1>
             </div>
-            <h3>I'm a Kiev based <span>front end</span>, and <span>back end</span> developer!! Let's <a href="#about">start scrolling</a>
-            and learn more <a href="#about">about me</a>.</h3>
+            <h3>I'm a Kiev based <span>front end</span>, and <span>back end</span> developer!!
+                Let's<span class="nav-row" ><a class="nav-row" href="#about">start scrolling</a></span>
+                and learn more <span class="nav-row" ><a href="#about">about me</a></span>.</h3>
             <hr>
             <div class="social">
                 <ul>
                     <li class="social-row">
-                        <a class="social-link" href="#">
+                        <a class="social-link" target="_blank" href="https://www.facebook.com/witaliy.zhuk">
                             <i class="fa fa-facebook"></i>
                         </a>
                     </li>
                     <li class="social-row">
-                        <a class="social-link" href="#">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="social-row">
-                        <a class="social-link" href="#">
+                        <a class="social-link" target="_blank" href="https://plus.google.com/u/0/106652757847619185340">
                             <i class="fa fa-google-plus"></i>
                         </a>
                     </li>
@@ -70,12 +73,7 @@
                         </a>
                     </li>
                     <li class="social-row">
-                        <a class="social-link" href="#">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="social-row">
-                        <a class="social-link" href="#">
+                        <a class="social-link" target="_blank" href="https://github.com/ZhukVitalii">
                             <i class="fa fa-github"></i>
                         </a>
                     </li>
@@ -97,7 +95,7 @@
              <div class="main-col">
                 <h2>About Me</h2>
                 <p> I am back end developer. I specialize in Java and also i am front end developer. In my work i use 
-                    Spring, Hibernate,MySQL, Bootstrap, HTML, CSS and others frameworks and technologies. In this portfolio 
+                    Spring, Hibernate, MySQL, Bootstrap, HTML, CSS and others frameworks and technologies. In this portfolio 
                     you can read about my skills and my projects. 
                 </p>
              </div>
@@ -106,43 +104,34 @@
                     <p class="address">
                         <span>Vitalii Zhuk</span><br>
                         <span>Ukraine, Kiev</span><br>
-                        <span class="address-block-label">phone:</span>
+                        <span class="address-block-label"><i class="fa fa-phone" aria-hidden="true"></i></span>
                         <a class="address-block-link" target="_blank" href="tel:+380638521116">+380638521116</a><br>
-                        <span class="address-block-label">email:</span>
+                        <span class="address-block-label"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                         <a class="address-block-link" target="_blank" href="mailto:golden_beetle@bigmir.net">golden_beetle@bigmir.net</a><br>
-                        <span class="address-block-label">GitHub:</span> 
-                        <a class="address-block-link" target="_blank" href="https://github.com/VitaliiZhuk" target="_blank">VitaliiZhuk</a>
+                        <span class="address-block-label"><i class="fa fa-github"></i></span> 
+                        <a class="address-block-link" target="_blank" href="https://github.com/ZhukVitalii">ZhukVitalii</a>
                     </p>
                    </div>
           </div>
        </section>
        <section id="resume">
-        
               <!-- Education
               ----------------------------------------------- -->
               <div class="row education">
-        
                  <div class="three columns header-col">
                     <h1><span>Education</span></h1>
                  </div>
-        
                  <div class="nine columns main-col">
-        
                     <div class="row item">
-        
                        <div class="twelve columns">
-        
                           <h3>College</h3>
-                          <p class="info">Kyiv Energy College<span>&bull;</span> <em class="date">2006-2010</em></p>
-        
+                          <p class="info">Kyiv Energy College<span>&bull;</span> <em class="date">2006-2010</em>
+                          </p>
                           <p>
                             Speciality : Service of automated heat and power equipment at power plants.
                           </p>
-        
                        </div>
-        
-                    </div> <!-- item end -->
-        
+                    </div>
                     <div class="row item">
                        <div class="twelve columns">
                           <h3>University</h3>
@@ -152,7 +141,6 @@
                            Speciality: Automated management of technological processes (master).
                           </p>
                        </div>
-        
                     </div> 
                     <div class="row item">
                         <div class="twelve columns">
@@ -168,14 +156,9 @@
                                 Online coures "English for IT".
                             </p>
                         </div>
-        
-                    </div><!-- item end -->
-        
-                 </div> <!-- main-col end -->
-        
-              </div> <!-- End Education -->
-        
-        
+                    </div>
+                 </div>
+              </div> 
               <!-- Work
               ----------------------------------------------- -->
               <div class="row work">
@@ -194,24 +177,17 @@
                     </div>
                  </div>
               </div>
-        
-        
               <!-- Skills
               ----------------------------------------------- -->
               <div class="row skill">
-        
-                 <div class="three columns header-col">
+                <div class="three columns header-col">
                     <h1><span>Skills</span></h1>
-                 </div>
-        
-                 <div class="nine columns main-col">
-        
-                    <p>In my grojects for <span>back end</span> i use Java, Spring Boot, Spring DATA, Spring Boot, Hibernate, MySQL.
+                </div>
+                <div class="nine columns main-col">
+                    <p>In my grojects for <span>back end</span> i use Java, Spring MVC, Spring Boot, Spring DATA, Spring Boot, Hibernate, MySQL.
                         For <span>front end</span> - HTML, CSS, Bootstrap.
                     </p>
-        
                         <div class="bars">
-        
                            <ul class="skills">
                                 <li><span class="bar-expand java"></span><em>JAVA</em></li>
                                 <li><span class="bar-expand css"></span><em>CSS</em></li>
@@ -221,9 +197,111 @@
                     </div>      
               </div>       
            </section> 
-   <div class="work">
-   </div>
-   <div class="contact">
-   </div>
+    <section id="portfolio">
+        <div class="cd-slider-wrapper">
+            <h2>My Project</h2>
+            <p> It is online Bike Shop. This application let you choose parts for your bike. 
+                Step by step you choose type, size and other components. Depending on your choice 
+                application selects components from databases and offers they to you. 
+            </p>
+		<ul class="cd-slider" data-step1="M1402,800h-2V0h1c0.6,0,1,0.4,1,1V800z" data-step2="M1400,800H379L771.2,0H1399c0.6,0,1,0.4,1,1V800z" data-step3="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z" data-step4="M-2,800h2V0h-1c-0.6,0-1,0.4-1,1V800z" data-step5="M0,800h1021L628.8,0L1,0C0.4,0,0,0.4,0,1L0,800z" data-step6="M0,800h1400V0L1,0C0.4,0,0,0.4,0,1L0,800z">
+			<li class="visible">
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<defs>
+							<clipPath id="cd-image-1">
+								<path id="cd-changing-path-1" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						
+						<image height='800px' width="1400px" clip-path="url(#cd-image-1)" xlink:href="images/img-1.jpg"></image>
+					</svg>
+				</div>
+            </li>
+			<li>
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<defs>
+							<clipPath id="cd-image-2">
+								<path id="cd-changing-path-2" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						<image height='800px' width="1400px" clip-path="url(#cd-image-2)" xlink:href="images/img-2.jpg"></image>
+					</svg>
+				</div>
+            </li>	
+            <li>
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<defs>
+							<clipPath id="cd-image-3">
+								<path id="cd-changing-path-3" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						<image height='800px' width="1400px" clip-path="url(#cd-image-3)" xlink:href="images/img-3.jpg"></image>
+					</svg>
+                </div> 
+            </li>
+			<li>
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<defs>
+							<clipPath id="cd-image-4">
+								<path id="cd-changing-path-4" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						
+						<image height='800px' width="1400px" clip-path="url(#cd-image-4)" xlink:href="images/img-4.jpg"></image>
+					</svg>
+				</div>
+            </li>
+		</ul> 
+		<ul class="cd-slider-navigation">
+			<li><a href="#0" class="next-slide"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a></li>
+			<li><a href="#0" class="prev-slide"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a></li>
+		</ul> 
+		<ol class="cd-slider-controls">
+			<li class="selected"><a href="#0"><em>Item 1</em></a></li>
+			<li><a href="#0"><em>Item 2</em></a></li>
+			<li><a href="#0"><em>Item 3</em></a></li>
+			<li><a href="#0"><em>Item 4</em></a></li>
+		</ol> 
+    </div> 
+</section>
+<footer>
+    <div class="row">
+        <div class="twelve columns">
+            <ul class="social-links">
+                <li class="social-row">
+                    <a class="social-link" target="_blank" href="https://www.facebook.com/witaliy.zhuk">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    </li>
+                <li class="social-row">
+                    <a class="social-link" target="_blank" href="https://plus.google.com/u/0/106652757847619185340">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li class="social-row">
+                    <a class="social-link" href="#">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-row">
+                    <a class="social-link" target="_blank" href="https://github.com/ZhukVitalii">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-row">
+                    <a class="social-link" href="#">
+                        <i class="fa fa-skype"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+            <div id="go-top"><a title="Back to Top" href="#home"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+    </div>
+</footer> <!-- Footer End-->
 </body>
 </html>
