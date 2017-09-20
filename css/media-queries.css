@@ -110,7 +110,7 @@
     right: 30px;
   }
 
-	#nav-wrap > a:before,
+  #nav-wrap > a:before,
   #nav-wrap > a:after {
 	  position: absolute;
 		border: 2px solid #fff;
@@ -130,7 +130,7 @@
    /* hide menu panel */
   #nav-wrap .nav {
     height: auto;
-		display: none;
+	display: none;
     clear: both;
     width: auto; 
     float: right;     
