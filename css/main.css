@@ -445,6 +445,15 @@ footer .social-links li:first-child {
      background-color: #0F9095; 
    
 }
+/* copyright */
+footer .copyright {
+    margin: 0;
+    padding: 0;
+}
+footer .copyright li {
+    display: inline-block;
+    padding: 5px;
+}
 
 
 
