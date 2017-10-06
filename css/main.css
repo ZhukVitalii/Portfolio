@@ -140,12 +140,13 @@
 }
 #about .profile-pic {
    position: relative;
-   width: 160px;
-   height: 160px;
+   width: 190px;
+   height: 230px;
    border-radius: 100%;
   
 }
-#about .contact-details { 
+#about .contact-details {
+    margin-top: 50px;
     width: 100%;
     text-align: center;
 }
@@ -203,8 +204,8 @@
  #resume .info {
     font: 16px/24px 'librebaskerville-italic', serif;
     color: #6E7881;
-    margin-bottom: 18px;
-    margin-top: 9px;
+    margin-bottom: 8px;
+    margin-top: 20px;
  }
  #resume .info span {
     margin-right: 5px;
@@ -214,6 +215,10 @@
     font: 15px/24px 'opensans-regular', sans-serif;
     margin-top: 6px;
  }
+ #resume .item{
+     margin-top: 40px;
+ }
+
 
 .row {
     width: 96%;
@@ -263,15 +268,16 @@
  /*----------------------------------------------*/
  /*	Skill Bars
  /*----------------------------------------------*/
- 
+
 .bars {
-     width: 95%;
+
+     width: 100%;
      float: left;
      padding: 0;
      text-align: left;
 }
 .bars .skills {
-       margin-top: 36px;
+    margin-top: 66px;
     list-style: none;
 }
 .bars li {
@@ -294,8 +300,9 @@
     position: absolute;
     left: 0;
     top: 0;
+    right: 0;
     margin: 0;
-    padding-right: 24px;
+    padding-right: 40px;
     background: #313131;
     display: inline-block;
     height: 42px;
@@ -384,7 +391,10 @@
 .twelve {
      width: 100%; 
 }
-
+.describe {
+    margin-bottom: 12px;
+    text-align: center;
+}
 /* ------------------------------------------------------------------ */
 /* i. Footer
 /* ------------------------------------------------------------------ */
@@ -403,7 +413,7 @@ footer a, footer a:visited {
  
  /* social links */
 footer .social-links {
-    margin: 18px 0 30px 0;
+    margin: 40px 0 30px 0;
     padding: 0;
     font-size: 30px;
  }
@@ -420,8 +430,8 @@ footer .social-links li:first-child {
  
  /* Go To Top Button */
 #go-top {
-     position: absolute;
-     top: -24px;
+    position: absolute;
+    top: -30px;
     left: 50%;
     margin-left: -30px;
  }
@@ -454,6 +464,7 @@ footer .copyright li {
     display: inline-block;
     padding: 5px;
 }
+
 
 
 

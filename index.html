@@ -12,6 +12,9 @@
           href="css/media-queries.css">
     <link rel="shortcut icon" 
           href="images/favicon.ico" >
+    <link rel="stylesheet"
+          href="css/reset.css"> <!-- CSS reset -->
+
     <!--for slider-->
     <script src="js/jquery-2.1.4.js"></script>
     <script src="js/jquery.mobile.custom.min.js"></script>
@@ -51,8 +54,7 @@
                 <h1>Hello!</h1>
                 <h1>I'm Vitalii Zhuk.</h1>
             </div>
-            <h3>I'm a Kiev based <span>front end</span>, and <span>back end</span> developer!!
-                Let's<span class="nav-row" ><a class="nav-row" href="#about">start scrolling</a></span>
+            <h3>I'm a Kiev based <span>front end</span>, and <span>back end</span> developer!!<span class="nav-row" ><a class="nav-row" href="#about">Start scrolling</a></span>
                 and learn more <span class="nav-row" ><a href="#about">about me</a></span>.</h3>
             <hr>
             <div class="social">
@@ -94,7 +96,7 @@
              </div>
              <div class="main-col">
                 <h2>About Me</h2>
-                <p> I am back end developer. I specialize in Java and also i am front end developer. In my work i use 
+                <p> I am back-end developer. I specialize in Java and also I am front-end developer. In my work I use
                     Spring, Hibernate, MySQL, Bootstrap, HTML, CSS and others frameworks and technologies. In this portfolio 
                     you can read about my skills and my projects. 
                 </p>
@@ -127,7 +129,7 @@
                           <h3>College</h3>
                           <p class="info">Kyiv Energy College<span>&bull;</span> <em class="date">2006-2010</em>
                           </p>
-                          <p>
+                          <p class="info-desc">
                             Speciality : Service of automated heat and power equipment at power plants.
                           </p>
                        </div>
@@ -137,7 +139,7 @@
                           <h3>University</h3>
                           <p class="info"> Kyiv National University of Construction and Architecture <span>&bull;</span> <em class="date">2010-2014</em>
                           </p>
-                          <p>
+                          <p class="info-desc">
                            Speciality: Automated management of technological processes (master).
                           </p>
                        </div>
@@ -147,13 +149,18 @@
                             <h3>Courses</h3>
                             <p class="info"> Green Forest <span>&bull;</span> <em class="date">2010-2014</em>
                             </p>
-                            <p>
+                            <p class="info-desc">
                                 English language course in Kiev. (Intermediate)
                             </p>
                             <p class="info"> Englishdom <span>&bull;</span> <em class="date">2017</em>
                             </p>
-                            <p>
+                            <p class="info-desc">
                                 Online coures "English for IT".
+                            </p>
+                            <p class="info"> PROG.KIEV.UA <span>&bull;</span> <em class="date">2016-2017</em>
+                            </p>
+                            <p class="info-desc">
+                                Java learning courses.
                             </p>
                         </div>
                     </div>
@@ -170,7 +177,7 @@
                        <div class="twelve columns">
                           <h3>Kievenergo</h3>
                           <p class="info">Engineer<span>&bull;</span> <em class="date">October 2014 - Present</em></p>
-                          <p>
+                          <p class="info-desc">
                           Engineer of automated system of energy accounting.
                           </p>
                        </div>
@@ -183,12 +190,12 @@
                 <div class="three columns header-col">
                     <h1><span>Skills</span></h1>
                 </div>
-                <div class="nine columns main-col">
-                    <p>In my grojects for <span>back end</span> i use Java, Spring MVC, Spring Boot, Spring DATA, Spring Boot, Hibernate, MySQL.
-                        For <span>front end</span> - HTML, CSS, Bootstrap.
+                <div class="nine columns main-col item">
+                    <p class="info-desc">In my projects for <span>back-end</span> I use Java, Spring MVC, Spring Boot, Spring DATA, Hibernate, MySQL.
+                        For <span>front-end</span> - HTML, CSS, Bootstrap.
                     </p>
-                        <div class="bars">
-                           <ul class="skills">
+                        <div class="bars ">
+                           <ul class="skills nine columns main-col">
                                 <li><span class="bar-expand java"></span><em>JAVA</em></li>
                                 <li><span class="bar-expand css"></span><em>CSS</em></li>
                                 <li><span class="bar-expand html"></span><em>HTML</em></li>
@@ -198,12 +205,14 @@
               </div>       
            </section> 
     <section id="portfolio">
-        <div class="cd-slider-wrapper">
+        <div class="twelve columns describe">
             <h2>My Project</h2>
-            <p> It is online Bike Shop. This application let you choose parts for your bike. 
-                Step by step you choose type, size and other components. Depending on your choice 
-                application selects components from databases and offers they to you. 
+            <p> It is online Bike Shop. This application lets you choose parts for your bike.
+                Step by step you choose type, size and components. Depending on your choice
+                application selects components from databases and offers them to you.
             </p>
+        </div>
+    <div class="cd-slider-wrapper" >
 		<ul class="cd-slider" data-step1="M1402,800h-2V0h1c0.6,0,1,0.4,1,1V800z" data-step2="M1400,800H379L771.2,0H1399c0.6,0,1,0.4,1,1V800z" data-step3="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z" data-step4="M-2,800h2V0h-1c-0.6,0-1,0.4-1,1V800z" data-step5="M0,800h1021L628.8,0L1,0C0.4,0,0,0.4,0,1L0,800z" data-step6="M0,800h1400V0L1,0C0.4,0,0,0.4,0,1L0,800z">
 			<li class="visible">
 				<div class="cd-svg-wrapper">
@@ -292,8 +301,23 @@
             </li>
 		</ul> 
 		<ul class="cd-slider-navigation">
-			<li><a href="#0" class="next-slide"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a></li>
-			<li><a href="#0" class="prev-slide"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a></li>
+			<li>
+                <a href="#0"
+                   class="next-slide">
+                    <i class="fa fa-chevron-circle-right"
+                       aria-hidden="true">
+                    </i>
+                </a>
+            </li>
+			<li>
+                <a href="#0"
+                   class="prev-slide">
+                    <i class="fa fa-chevron-circle-left"
+                       aria-hidden="true">
+
+                    </i>
+                </a>
+            </li>
 		</ul> 
 		<ol class="cd-slider-controls">
 			<li class="selected"><a href="#0"><em>Item 1</em></a></li>
@@ -337,7 +361,13 @@
                 </li>
             </ul>
         </div>
-            <div id="go-top"><a title="Back to Top" href="#home"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            <div id="go-top">
+                <a title="Back to Top"
+                   href="#home">
+                    <i class="fa fa-arrow-up"
+                       aria-hidden="true">
+                    </i>
+                </a>
             </div>
         <ul class="copyright">
             <li>&copy; Copyright 2017 VitaliiZhuk</li>
@@ -345,6 +375,5 @@
         </ul>
     </div>
 </footer> <!-- Footer End-->
-
 </body>
 </html>

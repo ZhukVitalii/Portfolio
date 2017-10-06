@@ -7,6 +7,7 @@
   padding-top: 96px;
   padding-bottom: 66px;
   overflow: hidden;
+
 }
 #portfolio a {
   color: #00A7E1;
@@ -62,13 +63,14 @@ Slider
 -------------------------------- */
 #portfolio .cd-slider-wrapper {
   position: relative;
-  width: 90%;
+  width: 100%;
   max-width: 1024px;
-  margin: 2em auto;
-  /* hide horizontal scrollbar on IE11 */
+  margin:  auto;
+ /* hide horizontal scrollbar on IE11 */
   overflow-x: hidden;
   text-align: center;
 }
+
 #portfolio .cd-slider > li {
   position: absolute;
   top: 0;
@@ -95,7 +97,7 @@ Slider
 #portfolio .cd-slider-wrapper svg {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0px;
   width: 100%;
   height: 100%;
 }
@@ -126,7 +128,8 @@ Slider navigation
   text-indent: 100%;
   white-space: nowrap;
   color: transparent;
-  background: url(../img/cd-icon-arrows.svg) no-repeat 0 0;
+  background: url(../images/cd-icon-arrows.svg) no-repeat 0 0;
+  background-color: #11ABB0;
   -webkit-transition: -webkit-transform 0.2s;
   -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
@@ -163,7 +166,7 @@ Slider dots/controls
   transform: translateX(-50%);
   z-index: 3;
   text-align: center;
-  width: 90%;
+  width: 100%;
 }
 #portfolio .cd-slider-controls::after {
   clear: both;
@@ -194,4 +197,10 @@ Slider dots/controls
 }
 #portfolio .no-touch .cd-slider-controls a:hover {
   background-color: #ffffff;
+}
+.next-slide {
+  color: #F06000;
+  background-color: #F06000;
+
+
 }
